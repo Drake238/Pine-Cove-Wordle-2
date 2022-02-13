@@ -124,7 +124,7 @@ const checkRow = () => {
     const guess = guessRows[currentRow].join('')
     console.log('guess', guess)
     if (currentTile > 4) {
-        fetch(`http://localhost:8000/check/?word=${guess}`)
+        fetch(`https://drake238.github.io/Pine-Cove-Wordle-2/${guess}`)
             .then(response => response.json())
             .then(json => {
                 console.log(json)
