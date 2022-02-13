@@ -5,7 +5,7 @@ const messageDisplay = document.querySelector('.message-container')
 let wordle
 
 const getWordle = () => {
-    fetch('http://drake238.github.io/Pine-Cove-Wordle-2/')
+    fetch('https://drake238.github.io/Pine-Cove-Wordle-2/')
         .then(response => response.json())
         .then(json => {
             console.log(json)
@@ -124,7 +124,7 @@ const checkRow = () => {
     const guess = guessRows[currentRow].join('')
     console.log('guess', guess)
     if (currentTile > 4) {
-        fetch(`http://drake238.github.io/Pine-Cove-Wordle-2/${guess}`)
+        fetch(`https://drake238.github.io/Pine-Cove-Wordle-2/${guess}`)
             .then(response => response.json())
             .then(json => {
                 console.log(json)
