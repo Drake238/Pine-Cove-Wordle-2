@@ -5,7 +5,7 @@ const messageDisplay = document.querySelector('.message-container')
 let wordle
 
 const getWordle = () => {
-    fetch('http://localhost:8000/word')
+    fetch('https://drake238.github.io/Pine-Cove-Wordle-2/')
         .then(response => response.json())
         .then(json => {
             console.log(json)
